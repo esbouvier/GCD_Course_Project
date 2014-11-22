@@ -1,6 +1,7 @@
 #Code Book for the reshaped HAR Using Smartphones Data Set
 
 ## Overview
+
 The tidyData.txt is the output of the `run_analysis()` function which processed the [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones), to get a tidy data set with the average of each variable for each activity and each subject.
 
 We followed the following Tidy Data principles (see the [Hadley Wickham's paper](http://vita.had.co.nz/papers/tidy-data.pdf)):
@@ -13,6 +14,7 @@ This tidy data set includes:
 * 35 observations (35 rows, excluding the header)
 
 ## Data Dictionary
+
 The data dictionary provides the name of the field, its size, its description and possible values.  
 *Note: This data dictionary was inspired from [PUMSDataDict](https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FPUMSDataDict06.pdf) which was provided for Quiz 1.*
 
@@ -357,7 +359,8 @@ You can find below the details of the variables in the original dataset, as expl
 
 > The complete list of variables of each feature vector is available in 'features.txt'
 
-## Reshaping/Transformation
+## Reshaping and Transformation
+
 See [README.md](README.md) for information about running the script for this transformation.  
 
 The Tidy Data is the result of the following transformations:

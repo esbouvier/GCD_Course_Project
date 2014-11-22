@@ -31,7 +31,7 @@ This repository contains the following files:
 
 # Analysis Overview
 The above projects steps provide a high level overview of the analysis.  
-More detailed information about this analysis can be found in the "Reshaping/Transformation" section of the [CodeBook.md](CodeBook.md) file.
+More detailed information about this analysis can be found in the "Reshaping and Transformation" section of the [CodeBook.md](CodeBook.md#reshaping-and-transformation) file.
 
 Comments in the [run_analysis.R](run_analysis.R) file shows the steps for this analysis and provide technical details.
 
