@@ -24,10 +24,10 @@ As per the Course Project instructions:
 # Repository
 This repository contains the following files:
 * README.md, this file.
-* [run_analysis.R](run_analysis.R), the R script with all the code required to produce the artifacts of this project.
+* [run_analysis.R](run_analysis.R), the R script with all the code required to produce the artefacts of this project.
 * [CodeBook.md](CodeBook.md), the Code Book for the [TidyData.txt](TidyData.txt).
 * [TidyData.txt](TidyData.txt), the tidy data set produced by step 5 of the project i.e the tidy data set with the average of each variable for each activity and each subject.
-* [TidyData_intermediate.txt](TidyData_intermediate.txt), the tidy data set produced by step 4 of the project i.e the tidy data set with all the mean and standard deviations measurements for all the subjects and activities. *The instructions are not clear whether this is required or not. This file has been included for completness.*
+* [TidyData_intermediate.txt](TidyData_intermediate.txt), the tidy data set produced by step 4 of the project i.e the tidy data set with all the mean and standard deviations measurements for all the subjects and activities. *The instructions are not clear whether this is required or not. This file has been included for completeness.*
 
 # Analysis Overview
 The above projects steps provide a high level overview of the analysis.  
@@ -90,5 +90,5 @@ other attached packages:
 loaded via a namespace (and not attached):  
 [1] plyr_1.8.1    Rcpp_0.11.3   stringr_0.6.2 tools_3.1.2
 ```
-- The Markdown documents of this repository have been edity with [MacDown](http://macdown.uranusjr.com)
+- The Markdown documents of this repository have been edited with [MacDown](http://macdown.uranusjr.com)
 

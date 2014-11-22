@@ -10,7 +10,7 @@ We followed the following Tidy Data principles (see the [Hadley Wickham's paper]
 * Each type of observational unit forms a table.
 
 This tidy data set includes:
-* 66 variables (68 columns, including hte 2 keys/IDs columns)
+* 66 variables (68 columns, including the 2 keys/IDs columns)
 * 35 observations (35 rows, excluding the header)
 
 ## Data Dictionary
@@ -363,7 +363,7 @@ You can find below the details of the variables in the original dataset, as expl
 
 See [README.md](README.md) for information about running the script for this transformation.  
 
-The Tidy Data is the result of the following transformations:
+The Tidy Data is the result of the following steps:
 
 1. The features data are loaded from features.txt and the column names are set to "id" and "label".  
 2. The activity labels are loaded from activity_labels.txt and the column names are set to "activityID" and "activityLabel".  
@@ -372,9 +372,9 @@ The Tidy Data is the result of the following transformations:
 5. To make them meaningful, the column names of the "x" dataset are set using the the data in the features.txt file (the 1st value of the 2nd column of the features data correspond to the name of the 1st column of the "x" data etc.). The names are also cleaned up, see below for more details.  
 6. Our analysis has only the mean and standard deviations measurements. We discard all the columns of the "x" dataset that do not have "-mean()" or "-std()" in their names.  
 6. The activity identifier corresponding to the measurements in the "x" files and present in the y_test.txt and y_train.txt, are bound together (row binding) to form one dataset. The column name is set to "activityID".  
-7. The activities ID present in the "y" dataset are looked up in the "activiy labels" dataset and the matched labels are added to the "y" dataset in a new column named "activityLabel".  
+7. The activities ID present in the "y" dataset are looked up in the "activity labels" dataset and the matched labels are added to the "y" dataset in a new column named "activityLabel".  
 8. The "subject", "y" and "x" datasets are then column bound so that we end up with a new data frame with columns in a particular order, this being: "subjectID", "activityID", "activityLabel", followed by all the variable columns from the "x" dataset.  
-9. To calulate the average of each variable for each activity and each subject, we melt our data frame to get narrow data of the measurements for subjects (`melt` function included in the `reshape2` package) and activities and cast the molten data to calculate the average of each variable for each activity and subject. The resulting data frame, which is our Tidy Data, consists of the following columns: subject ID, activity name, followed by one column for each of the averaged variable.  
+9. To calculate the average of each variable for each activity and each subject, we melt our data frame to get narrow data of the measurements for subjects (`melt` function included in the `reshape2` package) and activities and cast the molten data to calculate the average of each variable for each activity and subject. The resulting data frame, which is our Tidy Data, consists of the following columns: subject ID, activity name, followed by one column for each of the averaged variable.  
 10. As the resulting dataset includes the average of the variables, we postfix the variables column names with "Average".  
 11. Finally, the dataset is saved to file in table format, excluding the row names.  
 
